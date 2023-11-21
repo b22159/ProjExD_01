@@ -16,7 +16,7 @@ def main():
             if event.type == pg.QUIT: return
 
         x = tmr%1600
-        screen.blit(bg_img, [0, 0]) #練習4
+        screen.blit(bg_img, [-x, 0]) #練習4
         screen.blit(bg_img, [1600-x, 0])
         screen.blit(kk_imgs[tmr%2], [300,200])
         pg.display.update()
